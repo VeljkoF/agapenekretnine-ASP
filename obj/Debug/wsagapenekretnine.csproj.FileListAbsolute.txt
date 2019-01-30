@@ -1,0 +1,37 @@
+E:\Sajt ASP\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll.config
+E:\Sajt ASP\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll
+E:\Sajt ASP\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.pdb
+E:\Sajt ASP\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.csprojResolveAssemblyReference.cache
+E:\Sajt ASP\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.dll
+E:\Sajt ASP\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.pdb
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.csprojResolveAssemblyReference.cache
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.dll
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll.config
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.pdb
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.pdb
+C:\Users\Jovanaa\Downloads\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll.config
+C:\Users\Jovanaa\Downloads\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll
+C:\Users\Jovanaa\Downloads\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.pdb
+C:\Users\Jovanaa\Downloads\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.csprojResolveAssemblyReference.cache
+C:\Users\Jovanaa\Downloads\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.dll
+C:\Users\Jovanaa\Downloads\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.pdb
+C:\Users\Veljko\Desktop\wsagapenekretnine2\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll.config
+C:\Users\Veljko\Desktop\wsagapenekretnine2\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll
+C:\Users\Veljko\Desktop\wsagapenekretnine2\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.pdb
+C:\Users\Veljko\Desktop\wsagapenekretnine2\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.csprojResolveAssemblyReference.cache
+C:\Users\Veljko\Desktop\wsagapenekretnine2\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.dll
+C:\Users\Veljko\Desktop\wsagapenekretnine2\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.pdb
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll.config
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.pdb
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.csprojResolveAssemblyReference.cache
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.dll
+C:\Users\Veljko\Desktop\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.pdb
+E:\Externi HD\Fax\Sajtovi\Veljko\ASP\zavrsena verzija sajta iz ASp-a\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll.config
+E:\Externi HD\Fax\Sajtovi\Veljko\ASP\zavrsena verzija sajta iz ASp-a\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.dll
+E:\Externi HD\Fax\Sajtovi\Veljko\ASP\zavrsena verzija sajta iz ASp-a\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\bin\wsagapenekretnine.pdb
+E:\Externi HD\Fax\Sajtovi\Veljko\ASP\zavrsena verzija sajta iz ASp-a\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.dll
+E:\Externi HD\Fax\Sajtovi\Veljko\ASP\zavrsena verzija sajta iz ASp-a\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.pdb
+E:\Externi HD\Fax\Sajtovi\Veljko\ASP\zavrsena verzija sajta iz ASp-a\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.csprojAssemblyReference.cache
+E:\Externi HD\Fax\Sajtovi\Veljko\ASP\zavrsena verzija sajta iz ASp-a\wsagapenekretnine\wsagapenekretnine\wsagapenekretnine\obj\Debug\wsagapenekretnine.csproj.CoreCompileInputs.cache

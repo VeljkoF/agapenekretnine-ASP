@@ -1,0 +1,453 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Pocetna.master.cs" Inherits="wsagapenekretnine.Pocetna" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon" />
+    <link href="../css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- Bootstrap stylesheet -->
+    <link href="../css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- stylesheet -->
+    <link href="../css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
+    <!-- fontawesome -->
+    <link href="../css/portBox.css" rel="stylesheet" type="text/css" />
+    <link href="../css/stil.css" rel="stylesheet" type="text/css" />
+    <link href="../css/js-image-slider.css" rel="stylesheet" type="text/css" />
+    <!-- meta tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="Agape agencija za nekretnine u Beogradu. Pruza prodaju i izdavanje nekretnina" />
+    <meta name="keywords" content="Agape, agencija za nekretnine, nekretnine, nekretnina, Beograd" />
+
+
+
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- //meta tags -->
+    <!--fonts-->
+    <link href="//fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"/>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"/>
+    <!--//fonts-->
+    <script type="text/javascript" src="../js/jquery-2.1.4.min.js"></script>
+    <!-- Required-js -->
+
+    <!-- requried-jsfiles-for owl -->
+    <link href="../css/owl.carousel.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/js-image-slider.js" type="text/javascript"></script>
+    <script>
+        $(document).ready(function () {
+            $("#owl-demo").owlCarousel({
+                items: 4,
+                lazyLoad: true,
+                autoPlay: true,
+                navigation: true,
+                navigationText: true,
+                pagination: false,
+            });
+        });
+    </script>
+    <!-- //requried-jsfiles-for owl -->
+
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="../js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+    <!-- banner-slider-js -->
+    <script src="../js/application.js"></script>
+    <!-- banner-slider-js -->
+    <script type="text/javascript" src="../js/numscroller-1.0.js"></script>
+    <script src="../js/portBox.min.js" type="text/javascript"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+    <script src="../js/js.js" type="text/javascript"></script>
+</head>
+<body>
+    <form id="formPocenta" runat="server">
+        <!-- header -->
+        <header>
+            <div class="container">
+                <!-- nav -->
+                <nav class="navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <div class="logo">
+                                <h1><a href="pocetna.aspx">Agape nekretnine</a></h1>
+                            </div>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div id="bs-example-navbar-collapse-1" style="float: right">
+                            <%--<ul class="nav navbar-nav">--%>
+                            <asp:Menu ID="MenuPocetna" runat="server" Orientation="Horizontal" CssClass="collapse navbar-collapse">
+                                <StaticHoverStyle BackColor="#5992f1" ForeColor="White" />
+                                <StaticMenuItemStyle HorizontalPadding="20px" VerticalPadding="13px" ForeColor="Black" CssClass="nav navbar-nav" Font-Size="Medium" />
+                            </asp:Menu>
+                            <%-- </ul>--%>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                    <!-- /.container-fluid -->
+                </nav>
+                <script src="../js/nav.js"></script>
+                <!-- nav-js -->
+                <!-- //nav -->
+            </div>
+        </header>
+        <!-- //header -->
+        <!-- slider -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderSlider" runat="server">
+            <div id="sliderFrame">
+                <div id="slider">
+                    <asp:Repeater ID="RepeaterSlajder" runat="server">
+                        <ItemTemplate>
+                            <asp:Image ID="ImageSlajder" runat="server" ImageUrl='<%#Eval("PutanjaSlikeSlajder") %>' />
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </div>
+            </div>
+        </asp:ContentPlaceHolder>
+        <!-- //slider -->
+        <!-- main-content -->
+        <div class="main-content">
+            <!-- welcome -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderWelcome" runat="server">
+                <div class="welcome-top">
+                    <div class="container">
+                        <div class="col-md-6 welcome_top_left">
+                            <h3>DOBRODOŠLI</h3>
+                            <h5>AGAPE NEKRETNINE</h5>
+                            <p>
+                                Naša agencija se bavi prodajom i iyzavanjem stanova po najpovoljnijim cenama.
+                            </p>
+                        </div>
+                        <div class="col-md-6 welcome_top_right">
+                            <h3>OTVORENI SMO</h3>
+                            <h5></h5>
+                            <div class="welcome_right_location">
+                                <div class="location_img">
+                                    <img src="images/loc.jpg" alt="RadniciAgencije"/>
+                                </div>
+                                <div class="location">
+                                    <p>
+                                        Posetit te nas na našoj adresi:
+                                    </p>
+                                    <p class="location_text">
+                                        <span class="glyphicon glyphicon-map-marker"></span>Cvijićeva 25, Beograd, Srbija
+                                    </p>
+                                    <p class="location_text">
+                                        <span class="glyphicon glyphicon-dashboard"></span>Ponedeljak do Petak 08:30 - 16:30
+                                    </p>
+                                </div>
+                                <div class="clearfix">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                </div>
+            </asp:ContentPlaceHolder>
+            <!-- /welcome -->
+            <!-- properties-list -->
+            <div class="properties">
+                <div class="container">
+                    <!-- slider -->
+                    <div class="properties-list">
+                        <h2>Naša ponuda</h2>
+                        <ul id="flexiselDemo3">
+                            <asp:Repeater ID="RepeaterNekretnineTipNekretnine" runat="server">
+                                <ItemTemplate>
+                                    <li>
+                                        <div class="col-md-6 agileits">
+                                            <!-- Slider -->
+                                            <div class="Pro-img-w3ls">
+                                                <asp:Image ID="ImageSlika" runat="server" Width="400px" ImageUrl='<%#Eval("PutanjaSlikeNekretnine") %>' />
+                                            </div>
+                                            <!-- //Slider -->
+                                        </div>
+                                        <div class="col-md-6 pro-details-w3layouts">
+                                            <h3>
+                                                <b>
+                                                    <asp:Label ID="LabelTipNekretnine" runat="server" Text='<%#Eval("NazivTipNekretnine") %>'></asp:Label>
+                                                </b>
+                                            </h3>
+                                            <label></label>
+                                            <p class="location">
+                                                <strong>Lokacija :</strong>
+                                                <asp:Label ID="LabelLokacija" runat="server" Text='<%#Eval("GradNekretnine") %>'></asp:Label>
+                                            </p>
+                                            <ol class="agileits-prolist">
+                                                <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><b>Ulica: </b>
+                                                    <asp:Label ID="LabelUlica" runat="server" Text='<%#Eval("UlicaNekretnine") %>'></asp:Label>
+                                                </li>
+                                                <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><b>Broj soba: 
+                                                <asp:Label ID="LabelBrojSoba" runat="server" Text='<%#Eval("BrojSObaNekretnine") %>'></asp:Label>
+                                                </li>
+                                                <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><b>Kvadratura stana: </b>
+                                                    <asp:Label ID="LabelKvadraturaStana" runat="server" Text='<%#Eval("KvadraturaStana") %>'></asp:Label>
+                                                </li>
+                                                <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><b>Opis: </b>
+                                                    <asp:Label ID="LabelOpis" runat="server" Text='<%#Eval("OpisNekretnine") %>'></asp:Label>m<sup>2</sup>
+                                                </li>
+                                                <li><i class="fa fa-long-arrow-right" aria-hidden="true"></i><b>Cena: €</b>
+                                                    <asp:Label ID="LabelCena" runat="server" Text='<%#Eval("CenaNekretnine") %>'></asp:Label>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </li>
+                                </ItemTemplate>
+                            </asp:Repeater>
+
+                        </ul>
+                        <script type="text/javascript">
+                            $(window).load(function () {
+                                $("#flexiselDemo3").flexisel({
+                                    visibleItems: 1,
+                                    animationSpeed: 1000,
+                                    autoPlay: true,
+                                    autoPlaySpeed: 5000,
+                                    pauseOnHover: true,
+                                    enableResponsiveBreakpoints: true,
+                                    responsiveBreakpoints: {
+                                        portrait: {
+                                            changePoint: 480,
+                                            visibleItems: 1
+                                        },
+                                        landscape: {
+                                            changePoint: 640,
+                                            visibleItems: 1
+                                        },
+                                        tablet: {
+                                            changePoint: 768,
+                                            visibleItems: 1
+                                        }
+                                    }
+                                });
+
+                            });
+                        </script>
+                        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+                    </div>
+                </div>
+                <!-- //slider -->
+            </div>
+            <!-- //properties-list -->
+            <!-- Features -->
+            <%--<div class="features-w3l">
+			<div class="container">
+				<h3>Our Features</h3>
+				<div class="wthree_w3l_grids">
+					<div class="col-md-6 wthree_w3l_grid">
+						<div class="col-xs-3 wthree_w3l_grid-left">
+							<div class="wthree_w3l_grid-left1">
+								<i class="fa fa-home" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="col-xs-9 wthree_w3l_grid-right">
+							<h4>Mortgage</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 wthree_w3l_grid wow fadeInRight animated" data-wow-delay=".5s">
+						<div class="col-xs-3 wthree_w3l_grid-left">
+							<div class="wthree_w3l_grid-left1">
+								<i class="fa fa-key" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="col-xs-9 wthree_w3l_grid-right">
+							<h4>Rentals</h4>
+							<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="wthree_w3l_grids">
+					<div class="col-md-6 wthree_w3l_grid wow fadeInLeft animated" data-wow-delay=".5s">
+						<div class="col-xs-3 wthree_w3l_grid-left">
+							<div class="wthree_w3l_grid-left1">
+								<i class="fa fa-building-o" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="col-xs-9 wthree_w3l_grid-right">
+							<h4>Office spaces</h4>
+							<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="col-md-6 wthree_w3l_grid wow fadeInRight animated" data-wow-delay=".5s">
+						<div class="col-xs-3 wthree_w3l_grid-left">
+							<div class="wthree_w3l_grid-left1">
+								<i class="fa fa-briefcase" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class="col-xs-9 wthree_w3l_grid-right">
+							<h4>Loans</h4>
+							<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+						</div>
+						<div class="clearfix"> </div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+			</div>
+		</div>--%>
+            <!-- //Features -->
+
+            <!-- Stats -->
+            <%--<div class="stats">
+			<div class="container">
+			<h3>Overview</h3>
+				<div class="stats-info">
+					<div class="col-md-4 col-sm-4 stats-grid slideanim">
+						<i class="fa fa-smile-o"></i>
+						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='15500' data-delay='.5' data-increment="50">15500</div>
+						<p class="stats-info">Happy Clients</p>
+					</div>
+					<div class="col-md-4 col-sm-4 stats-grid slideanim">
+						<i class="fa fa-tags" aria-hidden="true"></i>
+						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='18' data-delay='.5' data-increment="5">18</div>
+						<p class="stats-info">Sales per month</p>
+					</div>
+					<div class="col-md-4 col-sm-4 stats-grid slideanim">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<div class='numscroller numscroller-big-bottom' data-slno='1' data-min='0' data-max='21500' data-delay='.5' data-increment="20">21500</div>
+						<p class="stats-info">Number of Homes</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>--%>
+            <!-- //Stats -->
+            <!-- clients -->
+            <asp:ContentPlaceHolder ID="ContentPlaceHolderClients" runat="server">
+                <div class="w3-our-clients">
+                    <div class="container">
+                        <h3>our clients</h3>
+                        <div id="owl-demo" class="owl-carousel text-center">
+                            <div class="item">
+                                <a href="#" class="client-logo">
+                                    <img src="images/parter1.png" class="img-responsive" alt="partner" /></a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="client-logo">
+                                    <img src="images/parter2.png" class="img-responsive" alt="partner" /></a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="client-logo">
+                                    <img src="images/parter3.png" class="img-responsive" alt="partner" /></a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="client-logo">
+                                    <img src="images/parter4.png" class="img-responsive" alt="partner" /></a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="client-logo">
+                                    <img src="images/parter5.png" class="img-responsive" alt="partner" /></a>
+                            </div>
+                            <div class="item">
+                                <a href="#" class="client-logo">
+                                    <img src="images/parter6.png" class="img-responsive" alt="partner" /></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </asp:ContentPlaceHolder>
+            <!-- //clients -->
+            <!-- news letter -->
+            <%--<div class="subscribe text-center">
+			<div class="container">
+				<h3>Get our free newsletter</h3>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature.</p>
+				<form>
+					<input type="email" name="email" placeholder="Email Address" class="user" required="">
+					<input type="submit" value="Subscribe">
+				</form>
+				<p class="spam">We never share your information or use it to spam you</p>
+			</div>
+		</div>--%>
+            <!-- //news letter -->
+        </div>
+        <!-- //main-content -->
+        <!-- footer -->
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderFooter" runat="server">
+            <footer>
+                <!-- footer-top -->
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="col-md-6 footer-top-left">
+                            <h3><a href="pocetna.aspx">Agape nekretnine</a></h3>
+                            <p>
+                                <asp:Menu ID="MenuFooter" runat="server" CssClass=" footer-top-mid">
+                                    <StaticMenuItemStyle Font-Size="Medium" Font-Italic="true" VerticalPadding="1px" />
+                                </asp:Menu>
+                            </p>
+                        </div>
+                        <div class="col-md-6 adress-agile">
+                            <h3>Adresa</h3>
+                            <address>
+                                <ul>
+                                    <li>Cvijićeva 25</li>
+                                    <li>Beograd</li>
+                                    <li>Srbija</li>
+                                    <li>Telefon : 063/7246152</li>
+                                    <li>Email : <a class="mail" href="mailto:agapenekretnine@yahoo.com">agapenekretnine(at)yahoo.com</a></li>
+                                </ul>
+                            </address>
+                            <ul class="fb_icons2">
+                                <li><a class="fb" href="http://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                                <li><a class="twit" href="http://www.twiter.com"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                <li><a class="goog" href="http://www.google.com"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="clearfix">
+                        </div>
+                    </div>
+                </div>
+                <!-- //footer-top -->
+                <div class="w3layouts-copyright">
+                    <p class="footer">
+                        &copy; 2017 Agape, Agencija za nekretninu | Dizajn <a href="http://veljkofridl.com/">Veljko Fridl</a>
+                    </p>
+                </div>
+            </footer>
+        </asp:ContentPlaceHolder>
+        <!-- //footer -->
+        <!-- here stars scrolling icon -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+                /*
+                    var defaults = {
+                    containerID: 'toTop', // fading element id
+                    containerHoverID: 'toTopHover', // fading element hover id
+                    scrollSpeed: 1200,
+                    easingType: 'linear' 
+                    };
+                */
+
+                $().UItoTop({ easingType: 'easeOutQuart' });
+
+            });
+        </script>
+        <!-- start-smoth-scrolling -->
+        <script type="text/javascript" src="../js/move-top.js"></script>
+        <script type="text/javascript" src="../js/easing.js"></script>
+        <script type="text/javascript">
+            jQuery(document).ready(function ($) {
+                $(".scroll").click(function (event) {
+                    event.preventDefault();
+                    $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+                });
+            });
+        </script>
+        <!-- start-smoth-scrolling -->
+        <!-- //here ends scrolling icon -->
+    </form>
+</body>
+</html>
